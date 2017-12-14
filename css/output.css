@@ -77,14 +77,11 @@
 /*--------------------------------------------------------------------------*/
 /*main starts*/
 .wrapper {
-  /* background:url('../images/christmas-720.jpg') no-repeat center center;*/
-  height: 400px;
-  background-size: cover;
   padding-top: 30px; }
 
 /*login form starts*/
 .container {
-  background: #00B8D3;
+  background: rgba(0, 72, 83, 0.4);
   margin: 0 20px 20px 20px;
   overflow: auto; }
 
@@ -402,7 +399,6 @@ h3, h2 {
     width: 99.9%; }
 
   .wrapper {
-    /* background:url('../images/christmas-467.jpg') no-repeat center center;*/
     height: 400px;
     padding-top: 30px; }
 
@@ -443,8 +439,10 @@ h3, h2 {
   .show-xs {
     display: block; }
 
-  .containerr {
-    min-width: 290px; }
+  .container {
+    min-width: 100%;
+    background: rgba(0, 72, 83, 0.4);
+    margin: 0 auto; }
 
   .mapp {
     height: 300px; }
@@ -453,46 +451,44 @@ h3, h2 {
     margin: 20px; }
 
   .main {
-    display: grid;
-    -ms-grid-columns: 0.01fr 2fr 0.01fr;
-    grid-template-columns: 0.01fr 2fr 0.01fr;
-    -ms-grid-rows: auto  0.8fr 0.8fr 0.8fr 0.8fr;
-    grid-template-rows: auto  0.8fr 0.8fr 0.8fr 0.8fr;
-    grid-gap: 20px;
-    grid-template-areas: "wrapper wrapper wrapper" ". t_left." ". b_left ." ". t_right ." ". b_right .";
     display: -ms-grid;
     -ms-grid-template-columns: 0.01fr 2fr 0.01fr;
     -ms-grid-template-rows: auto  0.8fr 0.8fr 0.8fr 0.8fr;
     -ms-grid-gap: 20px;
-    -ms-grid-template-areas: "wrapper wrapper wrapper" ". t_left." ". b_left ." ". t_right ." ". b_right ."; }
+    -ms-grid-template-areas: "wrapper wrapper wrapper" ". t_left." ". b_left ." ". t_right ." ". b_right .";
+    display: grid;
+    grid-template-columns: 0.01fr 2fr 0.01fr;
+    grid-template-rows: auto  0.8fr 0.8fr 0.8fr 0.8fr;
+    grid-gap: 20px;
+    grid-template-areas: "wrapper wrapper wrapper" ". t_left." ". b_left ." ". t_right ." ". b_right ."; }
 
   .services {
+    display: -ms-grid;
+    -ms-grid-template-columns: 0.1fr 22fr 0.1fr;
+    -ms-grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
+    -ms-grid-gap: 20px;
+    -ms-grid-template-areas: ". mainText  ." ". box1 ." ". box3 ." ". box2 ." ". box4 .";
     display: grid;
     -ms-grid-columns: 0.1fr 22fr 0.1fr;
     grid-template-columns: 0.1fr 22fr 0.1fr;
     -ms-grid-rows: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
     grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
     grid-gap: 20px;
-    grid-template-areas: ". mainText  ." ". box1 ." ". box3 ." ". box2 ." ". box4 .";
-    display: -ms-grid;
-    -ms-grid-template-columns: 0.1fr 22fr 0.1fr;
-    -ms-grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
-    -ms-grid-gap: 20px;
-    -ms-grid-template-areas: ". mainText  ." ". box1 ." ". box3 ." ". box2 ." ". box4 ."; }
+    grid-template-areas: ". mainText  ." ". box1 ." ". box3 ." ". box2 ." ". box4 ."; }
 
   .about {
-    display: grid;
-    -ms-grid-columns: 0.1fr 22fr 0.1fr;
-    grid-template-columns: 0.1fr 22fr 0.1fr;
-    -ms-grid-rows: auto;
-    grid-template-rows: auto;
-    grid-gap: 20px;
-    grid-template-areas: ". mainText .";
     display: -ms-grid;
+    -ms-grid-columns: 0.1fr 22fr 0.1fr;
+    -ms-grid-rows: auto;
     -ms-grid-template-columns: 0.1fr 22fr 0.1fr;
     -ms-grid-template-rows: auto;
     -ms-grid-gap: 20px;
-    -ms-grid-template-areas: ". mainText ."; }
+    -ms-grid-template-areas: ". mainText .";
+    grid-template-columns: 0.1fr 22fr 0.1fr;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: auto;
+    grid-template-areas: ". mainText ."; }
 
   .registration {
     display: -ms-grid;
@@ -500,11 +496,11 @@ h3, h2 {
     -ms-grid-template-rows: auto;
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: ". mainText .";
-    display: grid;
     -ms-grid-columns: auto;
-    grid-template-columns: auto;
     -ms-grid-rows: auto;
+    display: grid;
     grid-template-rows: auto;
+    grid-template-columns: auto;
     grid-gap: 20px;
     grid-template-areas: "mainText"; }
 
@@ -513,18 +509,18 @@ h3, h2 {
     padding: 10px; }
 
   .contact_Us {
-    display: grid;
-    -ms-grid-columns: 0.01fr 1fr 0.01fr;
-    grid-template-columns: 0.01fr 1fr 0.01fr;
-    -ms-grid-rows: 0.01fr 0.5fr 0.3fr 0.6fr;
-    grid-template-rows: 0.01fr 0.5fr 0.3fr 0.6fr;
-    grid-gap: 20px;
-    grid-template-areas: ". . . " "contact contact contact" ". aaddress ." ". mapp .";
     display: -ms-grid;
+    -ms-grid-columns: 0.01fr 1fr 0.01fr;
+    -ms-grid-rows: 0.01fr 0.5fr 0.3fr 0.6fr;
     -ms-grid-template-columns: 0.01fr 1fr 0.01fr;
     -ms-grid-template-rows: 0.01fr 0.5fr 0.3fr 0.6fr;
     -ms-grid-gap: 20px;
-    -ms-grid-template-areas: ". . . " "contact contact contact" ". aaddress ." ". mapp ."; } }
+    -ms-grid-template-areas: ". . . " "contact contact contact" ". aaddress ." ". mapp .";
+    display: grid;
+    grid-template-columns: 0.01fr 1fr 0.01fr;
+    grid-template-rows: 0.01fr 0.5fr 0.3fr 0.6fr;
+    grid-gap: 20px;
+    grid-template-areas: ". . . " "contact contact contact" ". aaddress ." ". mapp ."; } }
 @media (min-width: 468px) and (max-width: 767px) {
   address {
     padding-left: 20px; }
@@ -533,7 +529,6 @@ h3, h2 {
     height: 400px; }
 
   .wrapper {
-    /* background:url('../images/christmas-720.jpg') no-repeat center center;*/
     height: 500px;
     padding-top: 30px; }
 
@@ -558,9 +553,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: "wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper" ". t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left ." ". b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left ." ". t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right ." ".b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right .";
     display: grid;
-    -ms-grid-columns: 1fr [12] 1fr [12];
     grid-template-columns: repeat(12, 1fr) repeat(12, 1fr);
-    -ms-grid-rows: auto 1fr 1fr 1fr 1fr;
     grid-template-rows: auto 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     grid-template-areas: "wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper" ". t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left ." ". b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left ." ". t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right ." ".b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right ."; }
@@ -572,9 +565,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: ". mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText  ." ". box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 ." ". box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 ." ". box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 ." ". box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 .";
     display: grid;
-    -ms-grid-columns: 1fr [12] 1fr [12];
     grid-template-columns: repeat(12, 1fr) repeat(12, 1fr);
-    -ms-grid-rows: 1.5fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     grid-template-areas: ". mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText  ." ". box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 ." ". box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 ." ". box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 ." ". box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 ."; }
@@ -586,9 +577,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: ". mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText  .";
     display: grid;
-    -ms-grid-columns: 1fr [12] 1fr [12];
     grid-template-columns: repeat(12, 1fr) repeat(12, 1fr);
-    -ms-grid-rows: auto;
     grid-template-rows: auto;
     grid-gap: 20px;
     grid-template-areas: ". mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText  ."; }
@@ -600,9 +589,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: "mainText";
     display: grid;
-    -ms-grid-columns: auto;
     grid-template-columns: auto;
-    -ms-grid-rows: auto;
     grid-template-rows: auto;
     grid-gap: 20px;
     grid-template-areas: "mainText"; }
@@ -614,9 +601,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: ". . . " ". contact ." ". aaddress ." ". mapp . ";
     display: grid;
-    -ms-grid-columns: 0.1fr 22fr 0.1fr;
     grid-template-columns: 0.1fr 22fr 0.1fr;
-    -ms-grid-rows: 0.01fr 0.5fr 0.3fr 0.8fr;
     grid-template-rows: 0.01fr 0.5fr 0.3fr 0.8fr;
     grid-gap: 20px;
     grid-template-areas: ". . . " ". contact ." ". aaddress ." ". mapp . "; } }
@@ -628,9 +613,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: "wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper" ". t_left t_left t_left t_left t_left b_left b_left b_left b_left b_left ." ". t_right t_right t_right t_right t_right b_right b_right b_right b_right b_right .";
     display: grid;
-    -ms-grid-columns: 1fr [6] 1fr [6];
     grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-    -ms-grid-rows: auto 2fr 2fr;
     grid-template-rows: auto 2fr 2fr;
     grid-gap: 20px;
     grid-template-areas: "wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper" ". t_left t_left t_left t_left t_left b_left b_left b_left b_left b_left ." ". t_right t_right t_right t_right t_right b_right b_right b_right b_right b_right ."; }
@@ -642,9 +625,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: ".  mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText ." ". box1 box1 box1 box1 box1 box3 box3 box3 box3 box3 ." ". box2 box2 box2 box2 box2 box4 box4 box4 box4 box4 .";
     display: grid;
-    -ms-grid-columns: 1fr [6] 1fr [6];
     grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-    -ms-grid-rows: 2.5fr 2fr 2fr;
     grid-template-rows: 2.5fr 2fr 2fr;
     grid-gap: 20px;
     grid-template-areas: ".  mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText ." ". box1 box1 box1 box1 box1 box3 box3 box3 box3 box3 ." ". box2 box2 box2 box2 box2 box4 box4 box4 box4 box4 ."; }
@@ -656,9 +637,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: ". mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText  .";
     display: grid;
-    -ms-grid-columns: 1fr [6] 1fr [6];
     grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-    -ms-grid-rows: auto;
     grid-template-rows: auto;
     grid-gap: 20px;
     grid-template-areas: ". mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText  ."; }
@@ -670,9 +649,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: ". mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText  .";
     display: grid;
-    -ms-grid-columns: 1fr [6] 1fr [6];
     grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-    -ms-grid-rows: auto;
     grid-template-rows: auto;
     grid-gap: 20px;
     grid-template-areas: ". mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText  ."; }
@@ -684,9 +661,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: ". . . . . . . . . . . ." ". contact contact contact contact contact mapp mapp mapp mapp mapp ." ". contact contact contact contact contact aaddress aaddress aaddress aaddress aaddress .";
     display: grid;
-    -ms-grid-columns: 1fr [6] 1fr [6];
     grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-    -ms-grid-rows: 0.01fr 0.5fr 0.5fr;
     grid-template-rows: 0.01fr 0.5fr 0.5fr;
     grid-gap: 20px;
     grid-template-areas: ". . . . . . . . . . . ." ". contact contact contact contact contact mapp mapp mapp mapp mapp ." ". contact contact contact contact contact aaddress aaddress aaddress aaddress aaddress ."; }
@@ -698,7 +673,6 @@ h3, h2 {
     height: 390px; }
 
   .wrapper {
-    /* background:url('../images/christmas-991.jpg') no-repeat center center;*/
     height: 635px; }
 
   #logo {
@@ -746,9 +720,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: "wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper" ". . t_left t_left t_left t_left b_left b_left b_left b_left . ." ". . t_right t_right t_right t_right b_right b_right b_right b_right . .";
     display: grid;
-    -ms-grid-columns: 1fr [6] 1fr [6];
     grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-    -ms-grid-rows: auto 2fr 2fr;
     grid-template-rows: auto 2fr 2fr;
     grid-gap: 20px;
     grid-template-areas: "wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper" ". . t_left t_left t_left t_left b_left b_left b_left b_left . ." ". . t_right t_right t_right t_right b_right b_right b_right b_right . ."; }
@@ -760,9 +732,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: ". . mainText mainText mainText mainText mainText mainText mainText mainText . ." ". . box1 box1 box1 box1 box3 box3 box3 box3 . ." ". . box4 box4 box4 box4 box2 box2 box2 box2 . .";
     display: grid;
-    -ms-grid-columns: 1fr [6] 1fr [6];
     grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-    -ms-grid-rows: 2.5fr 2fr 2fr;
     grid-template-rows: 2.5fr 2fr 2fr;
     grid-gap: 20px;
     grid-template-areas: ". . mainText mainText mainText mainText mainText mainText mainText mainText . ." ". . box1 box1 box1 box1 box3 box3 box3 box3 . ." ". . box4 box4 box4 box4 box2 box2 box2 box2 . ."; }
@@ -774,9 +744,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: ". . mainText mainText mainText mainText mainText mainText mainText mainText . .";
     display: grid;
-    -ms-grid-columns: 1fr [6] 1fr [6];
     grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-    -ms-grid-rows: auto;
     grid-template-rows: auto;
     grid-gap: 20px;
     grid-template-areas: ". . mainText mainText mainText mainText mainText mainText mainText mainText . ."; }
@@ -788,9 +756,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: ". . mainText mainText mainText mainText mainText mainText mainText mainText . .";
     display: grid;
-    -ms-grid-columns: 1fr [6] 1fr [6];
     grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-    -ms-grid-rows: auto;
     grid-template-rows: auto;
     grid-gap: 20px;
     grid-template-areas: ". . mainText mainText mainText mainText mainText mainText mainText mainText . ."; }
@@ -802,15 +768,12 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: ". . . . . . . . . . . ." ". contact contact contact contact contact mapp mapp mapp mapp mapp ." ". contact contact contact contact contact aaddress aaddress aaddress aaddress aaddress .";
     display: grid;
-    -ms-grid-columns: 1fr [6] 1fr [6];
     grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-    -ms-grid-rows: 0.01fr 0.5fr 0.5fr;
     grid-template-rows: 0.01fr 0.5fr 0.5fr;
     grid-gap: 20px;
     grid-template-areas: ". . . . . . . . . . . ." ". contact contact contact contact contact mapp mapp mapp mapp mapp ." ". contact contact contact contact contact aaddress aaddress aaddress aaddress aaddress ."; }
 
   .wrapper {
-    /* background:url('../images/christmas-991.jpg') no-repeat center center;*/
     height: 635px; }
 
   #logo {
@@ -865,7 +828,8 @@ h3, h2 {
     position: fixed;
     bottom: 0;
     left: 0;
-    right: 0; } }
+    right: 0;
+    display: none; } }
 @media (min-width: 1200px) {
   .main {
     display: -ms-grid;
@@ -874,9 +838,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: "wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper" ". . t_left t_left t_left t_left t_right t_right t_right t_right . ." ". . b_left b_left b_left b_left b_right b_right b_right b_right . .";
     display: grid;
-    -ms-grid-columns: 1fr [6] 1fr [6];
     grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-    -ms-grid-rows: auto 3fr 3fr;
     grid-template-rows: auto 3fr 3fr;
     grid-gap: 20px;
     grid-template-areas: "wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper" ". . t_left t_left t_left t_left t_right t_right t_right t_right . ." ". . b_left b_left b_left b_left b_right b_right b_right b_right . ."; }
@@ -888,9 +850,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: ". . mainText mainText mainText mainText mainText mainText mainText mainText . ." ". . box1 box1 box1 box1 box3 box3 box3 box3 . ." ". . box4 box4 box4 box4 box2 box2 box2 box2 . .";
     display: grid;
-    -ms-grid-columns: 1fr [6] 1fr [6];
     grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-    -ms-grid-rows: 3fr 2fr 2fr;
     grid-template-rows: 3fr 2fr 2fr;
     grid-gap: 20px;
     grid-template-areas: ". . mainText mainText mainText mainText mainText mainText mainText mainText . ." ". . box1 box1 box1 box1 box3 box3 box3 box3 . ." ". . box4 box4 box4 box4 box2 box2 box2 box2 . ."; }
@@ -902,9 +862,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: ". . mainText mainText mainText mainText mainText mainText . . . .";
     display: grid;
-    -ms-grid-columns: 1fr [6] 1fr [6];
     grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-    -ms-grid-rows: 3fr;
     grid-template-rows: 3fr;
     grid-gap: 20px;
     grid-template-areas: ". . mainText mainText mainText mainText mainText mainText . . . ."; }
@@ -916,9 +874,7 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: ". . mainText mainText mainText mainText mainText mainText . . . .";
     display: grid;
-    -ms-grid-columns: 1fr [6] 1fr [6];
     grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-    -ms-grid-rows: 3fr;
     grid-template-rows: 3fr;
     grid-gap: 20px;
     grid-template-areas: ". . mainText mainText mainText mainText mainText mainText . . . ."; }
@@ -930,20 +886,18 @@ h3, h2 {
     -ms-grid-gap: 20px;
     -ms-grid-template-areas: ". . . . . . . . . . . ." ". contact contact contact contact contact mapp mapp mapp mapp mapp ." ". contact contact contact contact contact aaddress aaddress aaddress aaddress aaddress .";
     display: grid;
-    -ms-grid-columns: 1fr [6] 1fr [6];
     grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-    -ms-grid-rows: 0.2fr 0.5fr 0.6fr;
     grid-template-rows: 0.2fr 0.5fr 0.6fr;
     grid-gap: 20px;
     grid-template-areas: ". . . . . . . . . . . ." ". contact contact contact contact contact mapp mapp mapp mapp mapp ." ". contact contact contact contact contact aaddress aaddress aaddress aaddress aaddress ."; }
 
   .wrapper {
-    /* background:url('../images/christmas-991.jpg') no-repeat center center;*/
     height: 635px; }
 
   #logo {
     max-width: 15%;
-    margin-left: 17%; }
+    margin-left: 17%;
+    cursor: pointer; }
 
   .container {
     float: right;
@@ -996,6 +950,7 @@ h3, h2 {
     position: fixed;
     bottom: 0;
     left: 0;
-    right: 0; } }
+    right: 0;
+    display: none; } }
 
 /*# sourceMappingURL=output.css.map */
