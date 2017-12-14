@@ -48,7 +48,7 @@ $lgrey:#cbcbcb;
 	background:#8a8a8a;
 }
 #toggle-btn:hover{
-	box-shadow:0 0 3px 1px rgba(255, 255, 255, .6);
+	box-shadow:0 0 3px mrgba(255, 255, 255, .6);
 }
 .toggle-btn{
 	margin:.5px auto;
@@ -73,7 +73,7 @@ $lgrey:#cbcbcb;
 	margin-left:auto;
 	margin-right:auto;
 	height:40px;
-	pointer:cursor;
+	cursor:pointer;
 }
 #menu-list a{
 	text-decoration:none;
