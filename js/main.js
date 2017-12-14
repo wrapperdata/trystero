@@ -49,6 +49,7 @@ $(function(){
 
 	$('.aboutBtn').on('click',function(){
 		$('main').remove();
+		$('.footer').hide();
 		$.ajax({
     		url: "snippets/about.html",
     		method:'GET',
@@ -123,7 +124,7 @@ function changeText(data, status){
 var img_41 = "url('images/467.jpg')",
 	img_42 = "url('images/courier2-467.jpg')",
 	img_43 = "url('images/deliver-467.jpg')",
-	img_1 = "url('images/720.jpg')",
+	img_1 = "url('images/767.jpg')",
 	img_2 = "url('images/courier2-767.jpg')",
 	img_3 = "url('images/deliver-767.jpg')",
 	img_91 = "url('images/991.jpg')",
