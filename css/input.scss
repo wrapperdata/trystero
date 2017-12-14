@@ -129,20 +129,16 @@ $lgrey:#cbcbcb;
 	margin-bottom:10px;
 }
 #login_form{
-	display:-webkit-box;
+	
 	display:flex;
-	-webkit-box-orient:vertical;
-	-webkit-box-direction:normal;
-	    flex-direction:column;
+	flex-direction:column;
 	
 }
 #login_form_two{
-	display:-webkit-box;
+	
 	display:flex;
-	-webkit-box-orient:vertical;
-	-webkit-box-direction:normal;
-	    flex-direction:column;
-	display:-webkit-flex;
+	flex-direction:column;
+	
 	
 }
 #login_form input, #login_form_two input{
@@ -356,13 +352,14 @@ svg .plius{
 		font-style:italic;
 	}
 	.mapp{
-		grid-area:mapp;
 		-ms-grid-area:mapp;
+		grid-area:mapp;
 		width:100%;
 	}
 	
 	address{
 		font-family: $sintony;
+		-ms-grid-area:aaddress;
 		grid-area:aaddress;
 		font-size:110%;
 		font-weight:600;
@@ -384,10 +381,6 @@ svg .plius{
 }
 .regForm, .con_Form{
 	padding:20px;
-	display:-webkit-box;
-	display:-webkit-flex;
-	-webkit-box-orient:vertical;
-	-webkit-box-direction:normal;
 	display:flex;
 	flex-direction:column;
 	font-family:$sintony;
@@ -460,8 +453,6 @@ h3,h2{
 		
 	}
 	.wrapper{
-	 // background:url('../images/deliver-467.jpg') no-repeat center center;
-	 // background-size:cover;
 	height:400px;
 	padding-top:30px;
 
@@ -868,11 +859,9 @@ h3,h2{
 
 	}
 	#menu-list{
-		display:-webkit-box;
+		
 		display:flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    flex-direction: row;
+		flex-direction: row;
 		width:65%;
 		margin-left:8.5%;
 		
@@ -965,7 +954,7 @@ h3,h2{
 		". . mainText mainText mainText mainText mainText mainText mainText mainText . .";
 		display:grid;
 		grid-template-columns:repeat(6,1fr) repeat(6,1fr);
-		 grid-template-rows: auto;
+		grid-template-rows: auto;
 		grid-gap:20px;
 		grid-template-areas:
 		". . mainText mainText mainText mainText mainText mainText mainText mainText . .";
@@ -1015,11 +1004,9 @@ h3,h2{
 		display:none
 	}
 	#menu-list{
-		display:-webkit-box;
+		
 		display:flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    flex-direction: row;
+		flex-direction: row;
 		width:50%;
 		margin-left:17%;
 
@@ -1175,10 +1162,8 @@ h3,h2{
 		display:block;
 	}
 	#menu-list{
-		display:-webkit-box;
+		
 		display:flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
 		flex-direction: row;
 		margin-left:17%;
 		width:40%;
