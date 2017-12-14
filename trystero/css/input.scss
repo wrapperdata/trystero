@@ -1,0 +1,1250 @@
+$blue:#00B8D3;
+$oswald:'Roboto', sans-serif;
+$sintony: 'Roboto', sans-serif;
+$spectral: 'Spectral SC', serif;
+$shadow:0.5px 0 1px #636466;
+$shadowG:0 0 7px #147F80;
+$white:#ffffff;
+$width90:90%;
+$width45:45%;
+$padding7:7px;
+$green:#147F80;
+$grey:#989898;
+$lheight:1.9;
+$darkgrey:#58595B;
+$p130:130px;
+$lgrey:#cbcbcb;
+/*-------------------------------------------------------------------*/
+/*header starts*/
+#logo{
+	max-width:50%;
+	margin:10px;
+}
+
+/*header finish*/
+/*-------------------------------------------------------------------*/
+
+/*nav starts*/
+#nav{
+	background:$grey;
+	height:40px;
+}
+#nav h3{
+	font-family:$oswald;
+	font-size:130%;
+	margin:6px 20px;
+	color:$white;
+	text-shadow:$shadow;
+	float:left;	
+}
+#toggle-btn{
+	width:40px;
+	border:1px solid $white;
+	border-radius:5px;
+	margin-top:4px;
+	margin-right:20px;
+	float:right;
+	cursor:pointer;
+	background:#8a8a8a;
+}
+#toggle-btn:hover{
+	box-shadow:0 0 3px 1px rgba(255, 255, 255, .6);
+}
+.toggle-btn{
+	margin:.5px auto;
+	border-top:1.5px solid $white;
+	width:20px;
+	height:7px;
+	/* box-shadow:$shadow;*/
+}
+#f_line{
+	margin-top:6px;
+}
+#menu-list{
+	text-align:center;
+	list-style:none;
+	padding-left:0;
+	width: 80%;
+	
+}
+#menu-list li{
+	border-bottom:1px solid $grey;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	height:40px;
+	pointer:cursor;
+}
+#menu-list a{
+	text-decoration:none;
+	color:$grey;
+	line-height:$lheight;
+	font-family:$sintony;
+
+}
+#nav span{
+	color:$white;
+	text-shadow:$shadow;
+}
+#menu-list li:hover{
+		background:$lgrey;
+
+		
+}
+.blue{
+	background:$blue;
+}
+/*--------------------------------------------------------------------*/
+/*nav finish*/
+/*--------------------------------------------------------------------------*/
+/*main starts*/
+.wrapper{
+	/* background:url('../images/christmas-720.jpg') no-repeat center center;*/
+	height:400px;
+	background-size:cover;
+	padding-top:30px;
+	
+}
+/*login form starts*/
+.container{
+	background:$blue;
+	margin:0 20px 20px 20px;	
+	overflow:auto;
+	
+}
+
+#spacer {
+	height: 30px;
+}
+
+.form-container{
+	position:relative;
+	top:0;
+
+}
+.form-container1{
+	position:relative;
+	top:0;
+}
+.form-container1 h3{
+	margin-bottom:10px;
+}
+#login_form{
+	display:-webkit-box;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	    flex-direction:column;
+	
+}
+#login_form_two{
+	display:-webkit-box;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	    flex-direction:column;
+	display:-webkit-flex;
+	
+}
+#login_form input, #login_form_two input{
+	width:200px;
+	margin: 0 0 10px 25px;
+	line-height:$lheight;
+}
+#ac_one{
+	margin-bottom:20px;
+
+}
+.form-ac{
+	margin-left:25px;
+	font-size:150%;
+	color:$white;
+	text-shadow:$shadow;
+}
+#track_ac{
+	margin-top:15px;
+	margin-bottom:20px;
+}
+#login_form #btn-login,#login_form_two #btn-track{
+	width:100px;
+	margin-left:25px;
+	line-height:$lheight;
+	background:$green;
+	border:1px solid $green;
+	cursor:pointer;
+	color:$white;
+	text-shadow:$shadow;
+}
+form h3, form a{
+	font-family:$sintony;
+}
+#line{
+	border:1px solid $white; 
+	width:90%;
+	margin:25px 0 0 25px;;
+	clear:both;
+}
+/* #div_login_2,#div_login_1{*/
+/* 	display:none;*/
+/* }*/
+.arrow_2{
+	fill:$white;
+	cursor:pointer;
+}
+#login-reg{
+	position:relative;
+	cursor:pointer;
+}
+
+#login-reg span{
+	position:absolute;
+	font-size:120%;
+	color:$white;
+	text-shadow:$shadow;
+	font-family:$oswald;
+	letter-spacing:1px;
+}
+#login-reg span:hover{
+	text-shadow:0 0 1px 2px #000;
+}
+#arrowSpan_1{
+	top:0;
+	right:50px
+}
+#arrowSpan_2{
+	top:50px;
+	right:50px
+}
+#ac_one,#track_ac{
+	font-family:$sintony;
+	letter-spacing:2px;
+}
+/*login form finish*/
+/*-------------------------------------------------------------------*/
+/* boxes start*/
+#top-left,#bottom-right {
+	background:$green;
+}
+#top-right,#bottom-left{
+	background:$blue;
+}
+#bottom-right, #bottom-left,#top-left,#top-right{
+	
+	padding:10px 25px;
+	color:$white;
+	text-shadow:$shadow;
+	font-family:$sintony;
+}
+#bottom-right h3, #bottom-left h3,#top-left h3,#top-right h3{
+	font-family:$sintony;
+	letter-spacing:1px;
+}
+/*boxes finish*/
+/*-----------------------------------------------------------------------*/
+/*back to top*/
+.backTop{
+	text-align:center;
+	color:$darkgrey;
+}
+.backTop a{
+	font-weight:bold;
+	color:$darkgrey;
+}
+/*footer*/
+footer{
+	background:$darkgrey;
+	margin:20px;
+	color:$white;
+	text-shadow:$shadow;
+	text-align:center;
+	line-height:$lheight;
+	font-family:$sintony;
+	letter-spacing:1px;
+}
+/*-----------------------------------------------------------------------------*/
+/*svg starts*/
+#arrow-1{
+	width:15px;
+	position:absolute;
+	top:3px;
+	right:$p130;
+}
+#arrow-2{
+	width:15px;
+	position:absolute;
+	top:53px;
+	right:$p130;
+}
+svg .plius{
+	fill:$white;
+	box-shadow:$shadow;
+}
+
+
+#plius_1, #plius_2{
+	width:25px;;
+	position:absolute;
+
+}
+#plius_1{
+	top:0;
+	right:40px;
+	
+}
+
+#plius_2{
+	top:0;	
+	right:40px;
+}
+/*-------------------------------------------------------------------*/
+/*grid .main*/
+
+.wrapper{
+		grid-area:wrapper;
+		
+	}
+	#top-left{
+		grid-area:t_left;
+	}
+	#bottom-left{
+		grid-area:b_left;
+	}
+	#top-right{
+		grid-area:t_right;
+	}
+	#bottom-right{
+		grid-area:b_right;
+	}
+/*--------------------------------------------------------------------*/
+/*grid .services*/
+	.box_1{
+		grid-area:box1;
+		background:$green;
+	}
+	.box_2{
+		grid-area:box2;
+		background:$green;
+	}
+	.box_3{
+		grid-area:box3;
+		background:$blue;
+	}
+	.box_4{
+		grid-area:box4;
+		background:$blue;
+	}
+	.mainText{
+		grid-area: mainText;
+		/* background:orange;*/
+		color:$darkgrey;
+		font-family: $sintony;	
+		margin-top:50px;
+		padding:10px 25px;
+	}
+	.box_3, .box_4, .box_1, .box_2{
+		color:$white;
+		text-shadow:$shadow;
+		padding:10px 25px;
+		font-family: $sintony;
+		letter-spacing:0.5px;
+	}
+	.mainText h2,.box_3 h3, .box_4 h3, .box_1 h3, .box_2 h3{
+		font-family: $oswald;
+		letter-spacing: 1px;
+	}
+	.mainText li{
+		font-size: 90%;
+		font-style:italic;
+	}
+	.mapp{
+		grid-area:mapp;
+		-ms-grid-area:mapp;
+		width:100%;
+	}
+	
+	address{
+		font-family: $sintony;
+		grid-area:aaddress;
+		font-size:110%;
+		font-weight:600;
+		padding-top:20px;
+	}
+		
+
+/*--------------------------------------------------------------------*/
+/* registration form, contactUs form*/
+
+.regForm input, .con_Form input{
+	width:100%;
+	line-height:2;
+	margin-bottom: 10px;
+
+}
+.regForm label, .con_Form label{
+	font-weight:600;
+}
+.regForm, .con_Form{
+	padding:20px;
+	display:-webkit-box;
+	display:-webkit-flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	display:flex;
+	flex-direction:column;
+	font-family:$sintony;
+	
+}
+.regFieldset, #con_Fieldset{
+	
+	border:3px solid $blue;
+	width:100%;
+}
+.regFieldset legend{
+	// font-style:italic;
+	font-weight:bold;
+	font-size:130%;
+}
+.container_contact h3{
+	padding:0 20px 20px;;
+	margin:0;
+	font-family:$sintony;
+	font-weight:bold;
+	font-size:130%;
+	letter-spacing:1px;
+
+}
+#btn_submit, #btn_submit_c{
+	background:$green;
+	border:1px solid $green;
+	margin-top:10px;
+	color:$white;
+	text-shadow:$shadow;
+	padding:10px;
+	font-size:130%;
+}
+#btn_submit_c{
+	margin-top:20px;
+}
+#btn_submit:hover, #btn_submit_c:hover{
+	box-shadow:$shadowG;
+	
+}
+.regForm p{
+	border:1px solid $blue;
+}
+.container_contact{
+	-ms-grid-area:contact;
+	grid-area:contact;
+	
+	
+}
+
+
+/* registration, contactUs  ends*/
+/*---------------------------------------------------------------------*/
+h3,h2{
+	text-transform:uppercase;
+}
+
+/*---------------------------------------------------------------------*/
+/*media queries*/
+@media(max-width:290px){
+	#ac_one, #track_ac{
+		font-size: 7vw;
+	}
+	
+	
+}
+@media(max-width:467px){
+	#contact_form input,#textarea, #btn_submit_c{
+		width: 99.9%;
+		
+	}
+	.wrapper{
+	/* background:url('../images/christmas-467.jpg') no-repeat center center;*/
+	height:400px;
+	padding-top:30px;
+	}
+	#menu-list{
+		width:100%;
+	}
+
+	#div_login_2,#div_login_1{
+		display:none;
+	}
+	#plius_1,#plius_2{
+		right:20px;
+		width:5vw;
+	}
+	#login-reg span{
+		font-size:5vw;
+	}
+	#arrowSpan_1{
+		top:90px;
+		right:10px
+	}
+	#arrowSpan_2{
+		top:120px;
+		right:10px
+	}
+	#arrow-1{
+		width:4vw;
+		top:90px;
+		right:100px;
+	}
+	#arrow-2{
+		width:4vw;
+		top:120px;
+		right:100px;
+	}
+
+	.hidden-xs{
+		display:none
+	}
+	.show-xs{
+		display:block;
+	}
+	.containerr{
+		min-width:290px;
+	}
+	.mapp{
+		height:300px;
+	}
+	.backTop{
+		margin:20px;
+	}
+	.main{
+		display:grid;
+		-ms-grid-columns:0.01fr 2fr 0.01fr;
+		    grid-template-columns:0.01fr 2fr 0.01fr;
+		-ms-grid-rows: auto  0.8fr 0.8fr 0.8fr 0.8fr;
+		    grid-template-rows: auto  0.8fr 0.8fr 0.8fr 0.8fr;
+		grid-gap:20px;
+		grid-template-areas:
+		"wrapper wrapper wrapper"
+		". t_left."
+		". b_left ."
+		". t_right ."
+		". b_right .";
+		display:-ms-grid;
+		-ms-grid-template-columns:0.01fr 2fr 0.01fr;
+		-ms-grid-template-rows: auto  0.8fr 0.8fr 0.8fr 0.8fr;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		"wrapper wrapper wrapper"
+		". t_left."
+		". b_left ."
+		". t_right ."
+		". b_right .";
+			
+	}
+	.services{
+		display:grid;
+		-ms-grid-columns:0.1fr 22fr 0.1fr;
+		    grid-template-columns:0.1fr 22fr 0.1fr;
+		-ms-grid-rows: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
+		    grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
+		grid-gap:20px;
+		grid-template-areas:
+		". mainText  ."
+		". box1 ."
+		". box3 ."
+		". box2 ."
+		". box4 .";
+		display:-ms-grid;
+		-ms-grid-template-columns:0.1fr 22fr 0.1fr;
+		-ms-grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". mainText  ."
+		". box1 ."
+		". box3 ."
+		". box2 ."
+		". box4 .";
+			
+	}
+	.about{
+		display:grid;
+		-ms-grid-columns:0.1fr 22fr 0.1fr;
+		    grid-template-columns:0.1fr 22fr 0.1fr;
+		-ms-grid-rows: auto;
+		    grid-template-rows: auto;
+		grid-gap:20px;
+		grid-template-areas:
+		". mainText .";
+		display:-ms-grid;
+		-ms-grid-template-columns:0.1fr 22fr 0.1fr;
+		-ms-grid-template-rows: auto;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". mainText .";
+			
+	}
+	.registration{
+		display:-ms-grid;
+		-ms-grid-template-columns:0.1fr 22fr 0.1fr;
+		-ms-grid-template-rows: auto;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". mainText .";
+		display:grid;
+		-ms-grid-columns:auto;
+		    grid-template-columns:auto;
+		-ms-grid-rows: auto;
+		    grid-template-rows: auto;
+		grid-gap:20px;
+		grid-template-areas:
+		"mainText";
+			
+	}
+	.mainText{
+		margin-top:0;
+		padding:10px;
+	}
+	.contact_Us{
+		display:grid;
+		-ms-grid-columns:0.01fr 1fr 0.01fr;
+		    grid-template-columns:0.01fr 1fr 0.01fr;
+		-ms-grid-rows: 0.01fr 0.5fr 0.3fr 0.6fr;
+		    grid-template-rows: 0.01fr 0.5fr 0.3fr 0.6fr;
+		grid-gap:20px;
+		grid-template-areas:
+		". . . "
+		"contact contact contact"
+		". aaddress ."
+		". mapp .";
+		display:-ms-grid;
+		-ms-grid-template-columns:0.01fr 1fr 0.01fr;
+		-ms-grid-template-rows: 0.01fr 0.5fr 0.3fr 0.6fr;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". . . "
+		"contact contact contact"
+		". aaddress ."
+		". mapp .";
+			
+	}
+
+}
+@media (min-width:468px) and (max-width:767px){
+	address{
+		padding-left:20px;
+	}
+	.mapp{
+		height:400px;
+	}
+	.wrapper{
+	/* background:url('../images/christmas-720.jpg') no-repeat center center;*/
+	height:500px;
+	padding-top:30px;
+	}
+	#logo{
+		max-width:40%;
+		margin-left:5%;
+	}
+	#menu-list{
+		width:100%;
+	}
+
+	.hidden-sm{
+		display:none
+	}
+	.container{
+		width:440px;
+		float:right;
+	}
+	.main{
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(12,1fr) repeat(12,1fr);
+		-ms-grid-template-rows: auto 1fr 1fr 1fr 1fr;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		"wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper"
+		". t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left ."
+		". b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left ."
+		". t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right ."
+		".b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right .";
+		display:grid;
+		-ms-grid-columns:(1fr)[12] (1fr)[12];
+		    grid-template-columns:repeat(12,1fr) repeat(12,1fr);
+		-ms-grid-rows: auto 1fr 1fr 1fr 1fr;
+		    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+		grid-gap:20px;
+		grid-template-areas:
+		"wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper"
+		". t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left t_left ."
+		". b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left b_left ."
+		". t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right t_right ."
+		".b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right b_right .";
+			
+	}
+	.services{
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(12,1fr) repeat(12,1fr);
+		-ms-grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText  ."
+		". box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 ."
+		". box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 ."
+		". box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 ."
+		". box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 .";
+		display:grid;
+		-ms-grid-columns:(1fr)[12] (1fr)[12];
+		    grid-template-columns:repeat(12,1fr) repeat(12,1fr);
+		-ms-grid-rows: 1.5fr 1fr 1fr 1fr 1fr;
+		    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+		grid-gap:20px;
+		grid-template-areas:
+		". mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText  ."
+		". box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 ."
+		". box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 ."
+		". box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 ."
+		". box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 .";
+			
+	}
+	.about{
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(12,1fr) repeat(12,1fr);
+		-ms-grid-template-rows: auto ;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText  .";
+		display:grid;
+		-ms-grid-columns:(1fr)[12] (1fr)[12];
+		    grid-template-columns:repeat(12,1fr) repeat(12,1fr);
+		-ms-grid-rows: auto ;
+		    grid-template-rows: auto ;
+		grid-gap:20px;
+		grid-template-areas:
+		". mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText  .";
+			
+	}
+	.registration{
+		display:-ms-grid;
+		-ms-grid-template-columns:auto;
+		-ms-grid-template-rows: auto;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		"mainText";
+		display:grid;
+		-ms-grid-columns:auto;
+		    grid-template-columns:auto;
+		-ms-grid-rows: auto;
+		    grid-template-rows: auto;
+		grid-gap:20px;
+		grid-template-areas:
+		"mainText";
+			
+	}
+	.contact_Us{
+		display:-ms-grid;
+		-ms-grid-template-columns:0.1fr 22fr 0.1fr;
+		-ms-grid-template-rows: 0.01fr 0.5fr 0.3fr 0.8fr;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". . . "
+		". contact ."
+		". aaddress ."
+		". mapp . ";
+		display:grid;
+		-ms-grid-columns:0.1fr 22fr 0.1fr;
+		    grid-template-columns:0.1fr 22fr 0.1fr;
+		-ms-grid-rows: 0.01fr 0.5fr 0.3fr 0.8fr;
+		    grid-template-rows: 0.01fr 0.5fr 0.3fr 0.8fr;
+		grid-gap:20px;
+		grid-template-areas:
+		". . . "
+		". contact ."
+		". aaddress ."
+		". mapp . ";
+			
+	}
+}
+
+@media (min-width:768px) and (max-width:991px){
+	.main{
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-template-rows: auto 2fr 2fr;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		"wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper"
+		". t_left t_left t_left t_left t_left b_left b_left b_left b_left b_left ."
+		". t_right t_right t_right t_right t_right b_right b_right b_right b_right b_right .";
+		display:grid;
+		-ms-grid-columns:(1fr)[6] (1fr)[6];
+		    grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-rows: auto 2fr 2fr;
+		    grid-template-rows: auto 2fr 2fr;
+		grid-gap:20px;
+		grid-template-areas:
+		"wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper"
+		". t_left t_left t_left t_left t_left b_left b_left b_left b_left b_left ."
+		". t_right t_right t_right t_right t_right b_right b_right b_right b_right b_right .";
+			
+	}
+	.services{
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-template-rows:2.5fr 2fr 2fr;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		".  mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText ."
+		". box1 box1 box1 box1 box1 box3 box3 box3 box3 box3 ."
+		". box2 box2 box2 box2 box2 box4 box4 box4 box4 box4 .";
+		display:grid;
+		-ms-grid-columns:(1fr)[6] (1fr)[6];
+		    grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-rows:2.5fr 2fr 2fr;
+		    grid-template-rows:2.5fr 2fr 2fr;
+		grid-gap:20px;
+		grid-template-areas:
+		".  mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText ."
+		". box1 box1 box1 box1 box1 box3 box3 box3 box3 box3 ."
+		". box2 box2 box2 box2 box2 box4 box4 box4 box4 box4 .";
+			
+	}
+	.about{
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-template-rows: auto ;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText  .";
+		display:grid;
+		-ms-grid-columns:(1fr)[6] (1fr)[6];
+		    grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-rows: auto ;
+		    grid-template-rows: auto ;
+		grid-gap:20px;
+		grid-template-areas:
+		". mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText  .";
+			
+	}
+	.registration{
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-template-rows: auto ;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText  .";
+		display:grid;
+		-ms-grid-columns:(1fr)[6] (1fr)[6];
+		    grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-rows: auto ;
+		    grid-template-rows: auto ;
+		grid-gap:20px;
+		grid-template-areas:
+		". mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText mainText  .";
+			
+	}
+	.contact_Us{
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-template-rows: 0.01fr 0.5fr 0.5fr;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". . . . . . . . . . . ."
+		". contact contact contact contact contact mapp mapp mapp mapp mapp ."
+		". contact contact contact contact contact aaddress aaddress aaddress aaddress aaddress .";
+		display:grid;
+		-ms-grid-columns:(1fr)[6] (1fr)[6];
+		    grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-rows: 0.01fr 0.5fr 0.5fr;
+		    grid-template-rows: 0.01fr 0.5fr 0.5fr;
+		grid-gap:20px;
+		grid-template-areas:
+		". . . . . . . . . . . ."
+		". contact contact contact contact contact mapp mapp mapp mapp mapp ."
+		". contact contact contact contact contact aaddress aaddress aaddress aaddress aaddress .";
+			
+	}
+	#contact_form input,#textarea, #btn_submit_c{
+		width: 99.9%;
+		
+	}
+	.mapp{
+		height:390px;
+	}
+	.wrapper{
+	/* background:url('../images/christmas-991.jpg') no-repeat center center;*/
+	height:635px;
+	}
+
+	#logo{
+		max-width:30%;
+		margin-left:8.5%;
+	}
+	.container{
+		float:right;
+		margin-right:50px;
+		width:440px;
+
+	}
+	#menu-list{
+		display:-webkit-box;
+		display:flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    flex-direction: row;
+		width:65%;
+		margin-left:8.5%;
+		
+	}
+	#menu-list li{
+		border-bottom:none;
+		padding-top:3px;
+	
+	}
+	.hidden-md{
+		display:none
+	}
+	.show-md{
+		display:block;
+	}
+	#menu-list a{
+		color:$white;
+		text-shadow: $shadow;
+		font-size:120%;
+	}
+	nav{
+		background:$grey;
+		height:40px;
+		width:100%;
+	}
+	
+	
+}
+@media (min-width:992px) and (max-width:1199px){
+	.main{
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-template-rows: auto 2fr 2fr;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		"wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper"
+		". . t_left t_left t_left t_left b_left b_left b_left b_left . ."
+		". . t_right t_right t_right t_right b_right b_right b_right b_right . .";
+		display:grid;
+		-ms-grid-columns:(1fr)[6] (1fr)[6];
+		    grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-rows: auto 2fr 2fr;
+		    grid-template-rows: auto 2fr 2fr;
+		grid-gap:20px;
+		grid-template-areas:
+		"wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper"
+		". . t_left t_left t_left t_left b_left b_left b_left b_left . ."
+		". . t_right t_right t_right t_right b_right b_right b_right b_right . .";
+			
+	}
+	.services{
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-template-rows: 2.5fr 2fr 2fr;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". . mainText mainText mainText mainText mainText mainText mainText mainText . ."
+		". . box1 box1 box1 box1 box3 box3 box3 box3 . ."
+		". . box4 box4 box4 box4 box2 box2 box2 box2 . .";
+		display:grid;
+		-ms-grid-columns:(1fr)[6] (1fr)[6];
+		    grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-rows: 2.5fr 2fr 2fr;
+		    grid-template-rows: 2.5fr 2fr 2fr;
+		grid-gap:20px;
+		grid-template-areas:
+		". . mainText mainText mainText mainText mainText mainText mainText mainText . ."
+		". . box1 box1 box1 box1 box3 box3 box3 box3 . ."
+		". . box4 box4 box4 box4 box2 box2 box2 box2 . .";
+			
+	}
+	.about{
+		
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-template-rows: auto;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". . mainText mainText mainText mainText mainText mainText mainText mainText . .";
+		display:grid;
+		-ms-grid-columns:(1fr)[6] (1fr)[6];
+		    grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-rows: auto;
+		    grid-template-rows: auto;
+		grid-gap:20px;
+		grid-template-areas:
+		". . mainText mainText mainText mainText mainText mainText mainText mainText . .";
+			
+	}
+	.registration{
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-template-rows: auto;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". . mainText mainText mainText mainText mainText mainText mainText mainText . .";
+		display:grid;
+		-ms-grid-columns:(1fr)[6] (1fr)[6];
+		    grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-rows: auto;
+		    grid-template-rows: auto;
+		grid-gap:20px;
+		grid-template-areas:
+		". . mainText mainText mainText mainText mainText mainText mainText mainText . .";
+			
+	}
+	.contact_Us{
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-template-rows: 0.01fr 0.5fr 0.5fr;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". . . . . . . . . . . ."
+		". contact contact contact contact contact mapp mapp mapp mapp mapp ."
+		". contact contact contact contact contact aaddress aaddress aaddress aaddress aaddress .";
+		display:grid;
+		-ms-grid-columns:(1fr)[6] (1fr)[6];
+		    grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-rows: 0.01fr 0.5fr 0.5fr;
+		    grid-template-rows: 0.01fr 0.5fr 0.5fr;
+		grid-gap:20px;
+		grid-template-areas:
+		". . . . . . . . . . . ."
+		". contact contact contact contact contact mapp mapp mapp mapp mapp ."
+		". contact contact contact contact contact aaddress aaddress aaddress aaddress aaddress .";
+			
+	}
+	.wrapper{
+		
+		/* background:url('../images/christmas-991.jpg') no-repeat center center;*/
+		height:635px;
+	}
+	
+	#logo{
+		max-width:28%;
+		margin-left:17%;
+	}
+	.container{
+		float:right;
+		margin-right:100px;
+		width:440px;
+	}
+	#menu-list li{
+		border-bottom:none;
+		padding-top:3px;
+		
+	}
+	.hidden-lg{
+		display:none
+	}
+	#menu-list{
+		display:-webkit-box;
+		display:flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    flex-direction: row;
+		width:50%;
+		margin-left:17%;
+
+	}
+	nav{
+		background:$grey;
+		height:40px;
+		width:100%;
+	}
+	#menu-list li{
+		border-bottom:none;
+		padding-top:5px;
+		
+	}
+	.hidden-lg{
+		display:none
+	}
+	.show-lg{
+		display:block;
+	}
+	#menu-list a{
+		color:$white;
+		text-shadow: $shadow;
+		font-size:120%;
+	}
+	.mapp{
+		height:420px;
+	}
+	.footer{
+		position:fixed;
+		bottom:0;
+		left:0;
+		right:0;
+	}
+	
+}
+@media (min-width:1200px){
+	.main{
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-template-rows: auto 3fr 3fr;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		"wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper"
+		". . t_left t_left t_left t_left t_right t_right t_right t_right . ."
+		". . b_left b_left b_left b_left b_right b_right b_right b_right . .";
+		display:grid;
+		-ms-grid-columns:(1fr)[6] (1fr)[6];
+		    grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-rows: auto 3fr 3fr;
+		    grid-template-rows: auto 3fr 3fr;
+		grid-gap:20px;
+		grid-template-areas:
+		"wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper wrapper"
+		". . t_left t_left t_left t_left t_right t_right t_right t_right . ."
+		". . b_left b_left b_left b_left b_right b_right b_right b_right . .";
+			
+	}
+	.services{
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-template-rows: 3fr 2fr 2fr;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". . mainText mainText mainText mainText mainText mainText mainText mainText . ."
+		". . box1 box1 box1 box1 box3 box3 box3 box3 . ."
+		". . box4 box4 box4 box4 box2 box2 box2 box2 . .";
+		display:grid;
+		-ms-grid-columns:(1fr)[6] (1fr)[6];
+		    grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-rows: 3fr 2fr 2fr;
+		    grid-template-rows: 3fr 2fr 2fr;
+		grid-gap:20px;
+		grid-template-areas:
+		". . mainText mainText mainText mainText mainText mainText mainText mainText . ."
+		". . box1 box1 box1 box1 box3 box3 box3 box3 . ."
+		". . box4 box4 box4 box4 box2 box2 box2 box2 . .";
+			
+	}
+	.about{
+		
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-template-rows: 3fr;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". . mainText mainText mainText mainText mainText mainText . . . .";display:grid;
+		-ms-grid-columns:(1fr)[6] (1fr)[6];
+		    grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-rows: 3fr;
+		    grid-template-rows: 3fr;
+		grid-gap:20px;
+		grid-template-areas:
+		". . mainText mainText mainText mainText mainText mainText . . . .";
+			
+	}
+	.registration{
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-template-rows: 3fr;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". . mainText mainText mainText mainText mainText mainText . . . .";
+		display:grid;
+		-ms-grid-columns:(1fr)[6] (1fr)[6];
+		    grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-rows: 3fr;
+		    grid-template-rows: 3fr;
+		grid-gap:20px;
+		grid-template-areas:
+		". . mainText mainText mainText mainText mainText mainText . . . .";
+			
+	}
+	.contact_Us{
+		display:-ms-grid;
+		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-template-rows: 0.2fr 0.5fr 0.6fr;
+		-ms-grid-gap:20px;
+		-ms-grid-template-areas:
+		". . . . . . . . . . . ."
+		". contact contact contact contact contact mapp mapp mapp mapp mapp ."
+		". contact contact contact contact contact aaddress aaddress aaddress aaddress aaddress .";
+		display:grid;
+		-ms-grid-columns:(1fr)[6] (1fr)[6];
+		 grid-template-columns:repeat(6,1fr) repeat(6,1fr);
+		-ms-grid-rows: 0.2fr 0.5fr 0.6fr;
+		    grid-template-rows: 0.2fr 0.5fr 0.6fr;
+		grid-gap:20px;
+		grid-template-areas:
+		". . . . . . . . . . . ."
+		". contact contact contact contact contact mapp mapp mapp mapp mapp ."
+		". contact contact contact contact contact aaddress aaddress aaddress aaddress aaddress .";
+			
+	}
+	
+	.wrapper{
+		
+		/* background:url('../images/christmas-991.jpg') no-repeat center center;*/
+		height:635px;
+	}
+	#logo{
+		max-width:15%;
+		margin-left:17%;
+	}
+	.container{
+		float:right;
+		margin-right:100px;
+		width:440px;
+	}
+	#menu-list li{
+		border-bottom:none;
+		padding-top:3px;
+		
+	}
+	.hidden-xl{
+		display:none
+	}
+	.show-xl{
+		display:block;
+	}
+	#menu-list{
+		display:-webkit-box;
+		display:flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		flex-direction: row;
+		margin-left:17%;
+		width:40%;
+			
+	}
+	nav{
+		background:$grey;
+		height:40px;
+		width:100%;
+	}
+	#menu-list li{
+		border-bottom:none;
+		padding-top:5px;
+		
+	}
+	
+	.hidden-md{
+		display:none
+	}
+	#menu-list a{
+		color:$white;
+		text-shadow: $shadow;
+		font-size:120%;
+	}
+	.mapp{
+		height:420px;
+	}
+	#btn_submit_c{
+		margin-top:50px;
+	}
+	.footer{
+		position:fixed;
+		bottom:0;
+		left:0;
+		right:0;
+	}
+	
+	
+}
