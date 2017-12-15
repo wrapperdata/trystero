@@ -18,7 +18,8 @@ $(function(){
 		
 			$('#menu-list').slideToggle('600');
 	});
-		
+	// $('#nav').focusout(function(){$('#menu-list').slideUp('slow');});
+	
 	$('body').on('click','#plius_1',function(){
 		
 		$('#div_login_1').slideToggle('600',function(){
