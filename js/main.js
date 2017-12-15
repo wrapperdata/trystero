@@ -47,6 +47,7 @@ $(function(){
   });
 
 	$('.aboutBtn').on('click',function(){
+		var $height = $(window).height();
 		$('main').remove();
 		$('.footer').hide();
 		$.ajax({
@@ -55,7 +56,10 @@ $(function(){
     		success: changeText
     		
     	});
-    	$('.footer').show();
+		if($height > 1000){
+			$('.footer').show();
+		}
+    	
     	
 
 
