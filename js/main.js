@@ -106,7 +106,7 @@ $(function(){
 		});
 	});
 		toSlide();
-		showLoader('.backTop');
+		// showLoader('.backTop');
 		
 	
   
