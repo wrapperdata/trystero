@@ -14,6 +14,20 @@ $lheight:1.9;
 $darkgrey:#58595B;
 $p130:130px;
 $lgrey:#cbcbcb;
+
+//-----------------------------------------------------------------------
+//loader
+#loader{
+	  position: relative;
+	  margin: auto;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  width: 50px;
+	  height: 80%;
+
+}
 /*-------------------------------------------------------------------*/
 /*header starts*/
 #logo{
@@ -437,6 +451,14 @@ svg .plius{
 h3,h2{
 	text-transform:uppercase;
 }
+// .loader_center{
+// 	position:relative;
+// 	top:0;
+// 	bottom:0;
+// 	right:0;
+// 	left:0;
+// 	margin:auto;
+// }
 
 /*---------------------------------------------------------------------*/
 /*media queries*/
