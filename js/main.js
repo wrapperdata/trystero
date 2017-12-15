@@ -48,6 +48,7 @@ $(function(){
 
 	$('.aboutBtn').on('click',function(){
 		$('main').remove();
+		$('.footer').hide();
 		$.ajax({
     		url: "snippets/about.html",
     		method:'GET',
@@ -56,6 +57,7 @@ $(function(){
     	});
     	$('.footer').show();
     	
+
 
 
 	});
