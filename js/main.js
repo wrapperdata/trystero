@@ -49,7 +49,6 @@ $(function(){
 	$('.aboutBtn').on('click',function(){
 		var $height = $(window).height();
 		$('main').remove();
-		$('.footer').hide();
 		$.ajax({
     		url: "snippets/about.html",
     		method:'GET',
@@ -61,7 +60,6 @@ $(function(){
 		// }
     	
     	
-
 
 
 	});
