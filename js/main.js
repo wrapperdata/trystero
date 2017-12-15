@@ -202,22 +202,22 @@ var img_41 = "url('images/467.jpg')",
 	function showLoader(selector){
 
 		var loader = '<div id="loader" class="loader_center">';
-		loader+= '<svg class="lds-blocks" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" style="animation-play-state: running; animation-delay: 0s; background: none;"><rect x="19" y="19" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">'
+		loader+= '<svg class="lds-blocks" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" style="animation-play-state: running; animation-delay: 0s; background: none;"><rect x="19" y="19" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">';
 		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>';
 		loader+= '</rect><rect x="40" y="19" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">'
-		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.125s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>'
+		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.125s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>';
 		loader+= '</rect><rect x="61" y="19" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">'
-		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.25s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>'
+		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.25s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>';
 		loader+= '</rect><rect x="19" y="40" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">'
-		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.875s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>'
+		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.875s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>';
 		loader+= '</rect><rect x="61" y="40" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">'
-		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.375s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>'
+		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.375s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>';
 		loader+= '</rect><rect x="19" y="61" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">'
-		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.75s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>'
+		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.75s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>';
 		loader+= '</rect><rect x="40" y="61" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">'
-		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.625s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>'
+		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.625s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>';
 		loader+= '</rect><rect x="61" y="61" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">'
-		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.5s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>'
+		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.5s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>';
 		loader+= '</rect></svg></div>';
 		insertLoader(selector, loader);
 	}
