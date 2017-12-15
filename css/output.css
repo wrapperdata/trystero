@@ -40,7 +40,7 @@
   background: #8a8a8a; }
 
 #toggle-btn:hover {
-  box-shadow: 0 0 3px rgba(255, 255, 255, 0.6); }
+  box-shadow: 0 0 3px mrgba(255, 255, 255, 0.6); }
 
 .toggle-btn {
   margin: .5px auto;
@@ -154,6 +154,9 @@ form h3, form a {
   margin: 25px 0 0 25px;
   clear: both; }
 
+/* #div_login_2,#div_login_1{*/
+/* 	display:none;*/
+/* }*/
 .arrow_2 {
   fill: #ffffff;
   cursor: pointer; }
@@ -171,7 +174,7 @@ form h3, form a {
   letter-spacing: 1px; }
 
 #login-reg span:hover {
-  text-shadow: 0 0 2px  #000; }
+  text-shadow: 0 0 1px 2px #000; }
 
 #arrowSpan_1 {
   top: 0;
