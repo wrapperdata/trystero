@@ -153,7 +153,7 @@ var img_41 = "url('images/467.jpg')",
 		
 		$.each(arr, function(key, i) {
 			$('.wrapper').css({
-				'background': arr[i],
+				'background': 'arr[i]',
 				'background-size':'cover',
 				'background-position':'center center',
 				'display': 'none'
@@ -218,7 +218,7 @@ var img_41 = "url('images/467.jpg')",
 		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.625s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>'
 		loader+= '</rect><rect x="61" y="61" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">'
 		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.5s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>'
-		loader+= '</rect></svg></div>;'
+		loader+= '</rect></svg></div>';
 		insertLoader(selector, loader);
 	}
 
