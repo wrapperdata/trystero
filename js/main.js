@@ -23,7 +23,8 @@ $(function(){
 		
 			$('#menu-list').slideToggle('600');
 	});
-		
+	// $('#nav').focusout(function(){$('#menu-list').slideUp('slow');});
+	
 	$('body').on('click','#plius_1',function(){
 		
 		$('#div_login_1').slideToggle('600',function(){
@@ -52,21 +53,16 @@ $(function(){
   });
 
 	$('.aboutBtn').on('click',function(){
-		var $height = $(window).height();
 		$('main').remove();
 		$('.footer').hide();
 		showLoader('.insert');
-
 		$.ajax({
     		url: "snippets/about.html",
     		method:'GET',
     		success: changeText
     		
     	});
-		// if($height > 1000){
-		// 	$('.footer').show();
-		// }
-    	
+    	$('.footer').show();
     	
 
 
