@@ -56,9 +56,9 @@ $(function(){
     		success: changeText
     		
     	});
-		if($height > 1000){
-			$('.footer').show();
-		}
+		// if($height > 1000){
+		// 	$('.footer').show();
+		// }
     	
     	
 
