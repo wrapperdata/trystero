@@ -54,11 +54,9 @@ $(function(){
 	$('.aboutBtn').on('click',function(){
 		var $height = $(window).height();
 		$('main').remove();
-<<<<<<< HEAD
 		$('.footer').hide();
 		showLoader('.insert');
-=======
->>>>>>> 63eb4099373e1543dda3e68b5ee5c0e9f3ad1447
+
 		$.ajax({
     		url: "snippets/about.html",
     		method:'GET',
@@ -142,7 +140,7 @@ function changeText(data, status){
 var img_41 = "url('images/467.jpg')",
 	img_42 = "url('images/courier2-467.jpg')",
 	img_43 = "url('images/deliver-467.jpg')",
-	img_1 = "url('images/720.jpg')",
+	img_1 = "url('images/767.jpg')",
 	img_2 = "url('images/courier2-767.jpg')",
 	img_3 = "url('images/deliver-767.jpg')",
 	img_91 = "url('images/991.jpg')",
