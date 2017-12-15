@@ -1,15 +1,12 @@
 $(function(){
-	// svg loader
-
 	
-
 	// toggle button for mobile menu
 
 
 	$('#logo').on('click', function(){
 
 		$('main').remove();
-		$('.footer').hide();
+		// $('.footer').hide();
 		showLoader('.insert');
 		$.ajax({
     		url: "snippets/home.html",
@@ -54,7 +51,7 @@ $(function(){
 
 	$('.aboutBtn').on('click',function(){
 		$('main').remove();
-		$('.footer').hide();
+		// $('.footer').hide();
 		showLoader('#nav');
 		$.ajax({
     		url: "snippets/about.html",
@@ -62,14 +59,14 @@ $(function(){
     		success: changeText
     		
     	});
-    	$('.footer').show();
+    	// $('.footer').show();
     	
-
+    	checkHeight();
 
 	});
 	$('.servicesBtn').on('click',function(){
 		$('main').remove();
-		$('.footer').hide();
+		// $('.footer').hide();
 		showLoader('#nav');
 		$.ajax({
     		url: "snippets/services.html",
@@ -82,7 +79,7 @@ $(function(){
 	});
 	$('.contactBtn').on('click',function(){
 		$('main').remove();
-		$('.footer').hide();
+		// $('.footer').remove();
 		showLoader('#nav');
 		$.ajax({
     		url: "snippets/contactUs.html",
@@ -95,7 +92,7 @@ $(function(){
 	});
 	$('.homeBtn').on('click',function(){
 		$('main').remove();
-		$('.footer').hide();
+		// $('.footer').hide();
 		showLoader('#nav');
 		$.ajax({
     		url: "snippets/home.html",
@@ -107,7 +104,7 @@ $(function(){
 	});
 	$('body').on('click','#sign_up', function(){
 		$('main').remove();
-		$('.footer').hide();
+		// $('.footer').hide();
 		showLoader('#nav');
 		$.ajax({
 			url:'snippets/registration.html',
@@ -225,6 +222,19 @@ var img_41 = "url('images/467.jpg')",
 	function insertLoader(selector, loader){
 		var targetEl = $(selector);
 		targetEl.after(loader);
+	}
+
+	function checkHeight(){
+		var $height = $(window).height();
+		console.log($height);
+
+		if($height > 800){
+			console.log('hello');
+			$('footer').addClass('footer');
+		}
+		else{
+			$('.footer').removeClass('footer');
+		}
 	}
 	
 
