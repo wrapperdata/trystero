@@ -1,11 +1,16 @@
 $(function(){
+	// svg loader
+
+	
 
 	// toggle button for mobile menu
 
 
 	$('#logo').on('click', function(){
+
 		$('main').remove();
 		$('.footer').hide();
+		showLoader('.insert');
 		$.ajax({
     		url: "snippets/home.html",
     		method:'GET',
@@ -50,6 +55,7 @@ $(function(){
 	$('.aboutBtn').on('click',function(){
 		$('main').remove();
 		$('.footer').hide();
+		showLoader('.insert');
 		$.ajax({
     		url: "snippets/about.html",
     		method:'GET',
@@ -64,6 +70,7 @@ $(function(){
 	$('.servicesBtn').on('click',function(){
 		$('main').remove();
 		$('.footer').hide();
+		showLoader('.insert');
 		$.ajax({
     		url: "snippets/services.html",
     		method:'GET',
@@ -76,6 +83,8 @@ $(function(){
 	$('.contactBtn').on('click',function(){
 		$('main').remove();
 		$('.footer').hide();
+		showLoader('.insert');
+		showLoader('.mapp');
 		$.ajax({
     		url: "snippets/contactUs.html",
     		method:'GET',
@@ -88,6 +97,7 @@ $(function(){
 	$('.homeBtn').on('click',function(){
 		$('main').remove();
 		$('.footer').hide();
+		showLoader('.insert');
 		$.ajax({
     		url: "snippets/home.html",
     		method:'GET',
@@ -99,6 +109,7 @@ $(function(){
 	$('body').on('click','#sign_up', function(){
 		$('main').remove();
 		$('.footer').hide();
+		showLoader('.insert');
 		$.ajax({
 			url:'snippets/registration.html',
 			method:'GET',
@@ -114,7 +125,8 @@ $(function(){
 });
 function changeText(data, status){
 	
-	$('nav').after(data);
+	$('.insert').append(data);
+	$('#loader').remove();
 	$('main').hide().fadeIn('slow');
 	var $main =$('.main');
 	if($main){slide(img);}
@@ -184,6 +196,36 @@ var img_41 = "url('images/467.jpg')",
 			}
 		}, 10000);
 		
+	}
+
+	//-----------------------------------------
+	// loader
+	function showLoader(selector){
+
+		var loader = '<div id="loader" class="loader_center">';
+		loader+= '<svg class="lds-blocks" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" style="animation-play-state: running; animation-delay: 0s; background: none;"><rect x="19" y="19" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">'
+		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>';
+		loader+= '</rect><rect x="40" y="19" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">'
+		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.125s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>'
+		loader+= '</rect><rect x="61" y="19" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">'
+		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.25s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>'
+		loader+= '</rect><rect x="19" y="40" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">'
+		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.875s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>'
+		loader+= '</rect><rect x="61" y="40" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">'
+		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.375s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>'
+		loader+= '</rect><rect x="19" y="61" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">'
+		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.75s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>'
+		loader+= '</rect><rect x="40" y="61" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">'
+		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.625s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>'
+		loader+= '</rect><rect x="61" y="61" width="20" height="20" fill="#989898" style="animation-play-state: running; animation-delay: 0s;">'
+		loader+= '<animate attributeName="fill" values="#00b8d3;#989898;#989898" keyTimes="0;0.125;1" dur="1s" repeatCount="indefinite" begin="0.5s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>'
+		loader+= '</rect></svg></div>;'
+		insertLoader(selector, loader);
+	}
+
+	function insertLoader(selector, loader){
+		var targetEl = $(selector);
+		targetEl.html(loader);
 	}
 	
 

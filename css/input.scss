@@ -15,6 +15,18 @@ $darkgrey:#58595B;
 $p130:130px;
 $lgrey:#cbcbcb;
 /*-------------------------------------------------------------------*/
+// loader
+.loader_center{
+	  position: absolute;
+	  margin: auto;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  width: 50px;
+	  height: 50px;
+
+}
 /*header starts*/
 #logo{
 	max-width:50%;
