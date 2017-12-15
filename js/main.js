@@ -6,7 +6,7 @@ $(function(){
 	$('#logo').on('click', function(){
 
 		$('main').remove();
-		showLoader('.backTop');
+		showLoader('#nav');
 		$.ajax({
     		url: "snippets/home.html",
     		method:'GET',
@@ -49,7 +49,7 @@ $(function(){
 
 	$('.aboutBtn').on('click',function(){
 		$('main').remove();
-		showLoader('.backTop');
+		showLoader('#nav');
 		$.ajax({
     		url: "snippets/about.html",
     		method:'GET',
@@ -63,7 +63,7 @@ $(function(){
 	});
 	$('.servicesBtn').on('click',function(){
 		$('main').remove();
-		showLoader('.backTop');
+		showLoader('#nav');
 		$.ajax({
     		url: "snippets/services.html",
     		method:'GET',
@@ -75,7 +75,7 @@ $(function(){
 	});
 	$('.contactBtn').on('click',function(){
 		$('main').remove();
-		showLoader('.backTop');
+		showLoader('#nav');
 		$.ajax({
     		url: "snippets/contactUs.html",
     		method:'GET',
@@ -87,7 +87,7 @@ $(function(){
 	});
 	$('.homeBtn').on('click',function(){
 		$('main').remove();
-		showLoader('.backTop');
+		showLoader('#nav');
 		$.ajax({
     		url: "snippets/home.html",
     		method:'GET',

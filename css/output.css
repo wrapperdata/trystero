@@ -1,12 +1,5 @@
 #loader {
-  position: relative;
-  margin: 200px auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  height: 800px; }
+  position: relative; }
 
 /*-------------------------------------------------------------------*/
 /*header starts*/
@@ -393,8 +386,26 @@ h3, h2 {
 /*media queries*/
 @media (max-width: 290px) {
   #ac_one, #track_ac {
-    font-size: 7vw; } }
+    font-size: 7vw; }
+
+  #loader {
+    margin: 50px auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 800px; } }
 @media (max-width: 467px) {
+  #loader {
+    margin: 100px auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 800px; }
+
   #contact_form input, #textarea, #btn_submit_c {
     width: 99.9%; }
 
@@ -522,6 +533,15 @@ h3, h2 {
     grid-gap: 20px;
     grid-template-areas: ". . . " "contact contact contact" ". aaddress ." ". mapp ."; } }
 @media (min-width: 468px) and (max-width: 767px) {
+  #loader {
+    margin: 150px auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 800px; }
+
   address {
     padding-left: 20px; }
 
@@ -606,6 +626,15 @@ h3, h2 {
     grid-gap: 20px;
     grid-template-areas: ". . . " ". contact ." ". aaddress ." ". mapp . "; } }
 @media (min-width: 768px) and (max-width: 991px) {
+  #loader {
+    margin: 200px auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 800px; }
+
   .main {
     display: -ms-grid;
     -ms-grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
@@ -710,6 +739,15 @@ h3, h2 {
     height: 40px;
     width: 100%; } }
 @media (min-width: 992px) and (max-width: 1199px) {
+  #loader {
+    margin: 200px auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 800px; }
+
   .main {
     display: -ms-grid;
     -ms-grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
@@ -824,6 +862,15 @@ h3, h2 {
     left: 0;
     right: 0; } }
 @media (min-width: 1200px) {
+  #loader {
+    margin: 200px auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 800px; }
+
   .main {
     display: -ms-grid;
     -ms-grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
