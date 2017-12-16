@@ -14,6 +14,7 @@ $(document).ready(function(){
     	
 	
 });
+
 $(function(){
 	
 	// toggle button for mobile menu
@@ -122,12 +123,7 @@ $(function(){
 		});
 	});
 		toSlide();
-		// showLoader('.backTop');
-		
-	
   
-	
-     
 });
 
 
@@ -138,7 +134,10 @@ function changeText(data, status){
 	$('main').hide().fadeIn('slow');
 	var $main =$('.main');
 	if($main){slide(img);}
+
 }
+
+
 var img_41 = "url('images/467.jpg')",
 	img_42 = "url('images/courier2-467.jpg')",
 	img_43 = "url('images/deliver-467.jpg')",

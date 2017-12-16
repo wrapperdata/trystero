@@ -475,7 +475,6 @@ h3,h2{
 }
 @media(max-width:467px){
 	#loader{
-	  
 	  margin: 70px auto;
 	  top: 0;
 	  right: 0;
@@ -545,7 +544,6 @@ h3,h2{
 		margin:20px;
 	}
 	.main{
-		
 		display:-ms-grid;
 		-ms-grid-template-columns:0.01fr 2fr 0.01fr;
 		-ms-grid-template-rows: auto  0.8fr 0.8fr 0.8fr 0.8fr;
@@ -659,7 +657,6 @@ h3,h2{
 }
 @media (min-width:468px) and (max-width:767px){
 	#loader{
-	  
 	  margin: 100px auto;
 	  top: 0;
 	  right: 0;
@@ -795,14 +792,13 @@ h3,h2{
 
 @media (min-width:768px) and (max-width:991px){
 	#loader{
-	 
-	  margin: 100px auto;
+	 margin: 100px auto;
 	  top: 0;
 	  right: 0;
 	  bottom: 0;
 	  left: 0;
 	  width: 50px;
-	  height: 300px;
+	  height: 800px;
 
 }
 	.main{
@@ -955,7 +951,7 @@ h3,h2{
 	  bottom: 0;
 	  left: 0;
 	  width: 50px;
-	  height: 300px;
+	  height: 800px;
 
 }
 	.main{
@@ -1111,14 +1107,13 @@ h3,h2{
 }
 @media (min-width:1200px){
 	#loader{
-	  
 	  margin: 200px auto;
 	  top: 0;
 	  right: 0;
 	  bottom: 0;
 	  left: 0;
 	  width: 50px;
-	  height: 300px;
+	  height: 800px;
 
 }
 	.main{
