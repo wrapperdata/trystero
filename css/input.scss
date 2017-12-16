@@ -461,7 +461,6 @@ h3,h2{
 	}
 	
 	#loader{
-	 
 	  margin: 50px auto;
 	  top: 0;
 	  right: 0;
@@ -483,7 +482,11 @@ h3,h2{
 	  width: 50px;
 	  height: 800px;
 
-}
+	}
+	#logo{
+		max-width:30%;
+		margin-left:5%;
+	}
 	#contact_form input,#textarea, #btn_submit_c{
 		width: 99.9%;
 		
@@ -567,7 +570,6 @@ h3,h2{
 			
 	}
 	.services{
-		
 		display:-ms-grid;
 		-ms-grid-template-columns:0.1fr 22fr 0.1fr;
 		-ms-grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
@@ -677,7 +679,7 @@ h3,h2{
 		padding-top:30px;
 	}
 	#logo{
-		max-width:40%;
+		max-width:30%;
 		margin-left:5%;
 	}
 	#menu-list{
