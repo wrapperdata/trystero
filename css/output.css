@@ -398,7 +398,7 @@ h3, h2 {
     height: 800px; } }
 @media (max-width: 467px) {
   #loader {
-    margin: 100px auto;
+    margin: 70px auto;
     top: 0;
     right: 0;
     bottom: 0;
@@ -534,7 +534,7 @@ h3, h2 {
     grid-template-areas: ". . . " "contact contact contact" ". aaddress ." ". mapp ."; } }
 @media (min-width: 468px) and (max-width: 767px) {
   #loader {
-    margin: 150px auto;
+    margin: 100px auto;
     top: 0;
     right: 0;
     bottom: 0;
@@ -627,13 +627,13 @@ h3, h2 {
     grid-template-areas: ". . . " ". contact ." ". aaddress ." ". mapp . "; } }
 @media (min-width: 768px) and (max-width: 991px) {
   #loader {
-    margin: 200px auto;
+    margin: 100px auto;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     width: 50px;
-    height: 800px; }
+    height: 300px; }
 
   .main {
     display: -ms-grid;
@@ -746,7 +746,7 @@ h3, h2 {
     bottom: 0;
     left: 0;
     width: 50px;
-    height: 800px; }
+    height: 300px; }
 
   .main {
     display: -ms-grid;
@@ -869,7 +869,7 @@ h3, h2 {
     bottom: 0;
     left: 0;
     width: 50px;
-    height: 800px; }
+    height: 300px; }
 
   .main {
     display: -ms-grid;
