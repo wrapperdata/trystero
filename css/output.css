@@ -744,7 +744,7 @@ h3, h2 {
     width: 100%; } }
 @media (min-width: 992px) and (max-width: 1199px) {
   #loader {
-    margin: 200px auto;
+    margin: 100px auto;
     top: 0;
     right: 0;
     bottom: 0;
@@ -867,7 +867,7 @@ h3, h2 {
     right: 0; } }
 @media (min-width: 1200px) {
   #loader {
-    margin: 200px auto;
+    margin: 100px auto;
     top: 0;
     right: 0;
     bottom: 0;

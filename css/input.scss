@@ -947,7 +947,7 @@ h3,h2{
 }
 @media (min-width:992px) and (max-width:1199px){
 	#loader{
-	  margin: 200px auto;
+	  margin: 100px auto;
 	  top: 0;
 	  right: 0;
 	  bottom: 0;
@@ -995,7 +995,6 @@ h3,h2{
 			
 	}
 	.about{
-		
 		display:-ms-grid;
 		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
 		-ms-grid-template-rows: auto;
@@ -1109,7 +1108,7 @@ h3,h2{
 }
 @media (min-width:1200px){
 	#loader{
-	  margin: 200px auto;
+	  margin: 100px auto;
 	  top: 0;
 	  right: 0;
 	  bottom: 0;
