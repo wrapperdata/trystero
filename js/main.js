@@ -1,3 +1,19 @@
+
+$(document).ready(function(){
+ 	
+
+		$('main').remove();
+		showLoader('#nav');
+		$.ajax({
+    		url: "snippets/home.html",
+    		method:'GET',
+    		success: changeText
+    		
+    		
+    	});
+    	
+	
+});
 $(function(){
 	
 	// toggle button for mobile menu
