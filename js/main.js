@@ -57,10 +57,10 @@ $(function(){
 	});	
 	
 
-	$("#menu-list").click(function () {
+	$("#menu_list").click(function (event) {
 		var $screenWidth = $(window).width();
     if ($screenWidth < 768){
-    	$('#menu-list').slideUp('600');
+    	$('#menu_list').slideUp('600');
 
     }
     
