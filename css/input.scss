@@ -55,7 +55,7 @@ $lgrey:#cbcbcb;
 	background:#8a8a8a;
 }
 #toggle-btn:hover{
-	box-shadow:0 0 3px mrgba(255, 255, 255, .6);
+	box-shadow:0 0 3px rgba(255, 255, 255, .6);
 }
 .toggle-btn{
 	margin:.5px auto;
@@ -67,33 +67,35 @@ $lgrey:#cbcbcb;
 #f_line{
 	margin-top:6px;
 }
-#menu-list{
+#menu_list{
 	text-align:center;
 	list-style:none;
 	padding-left:0;
 	width: 80%;
 	
 }
-#menu-list li{
+#menu_list li{
 	border-bottom:1px solid $grey;
 	width:80%;
 	margin-left:auto;
 	margin-right:auto;
 	height:40px;
-	cursor:pointer;
+	// cursor:pointer;
 }
-#menu-list a{
+#menu_list a{
 	text-decoration:none;
 	color:$grey;
 	line-height:$lheight;
 	font-family:$sintony;
+	padding:10px 25px;
+	text-align:center;
 
 }
 #nav span{
 	color:$white;
 	text-shadow:$shadow;
 }
-#menu-list li:hover{
+#menu_list li:hover{
 		background:$lgrey;
 
 		
@@ -186,9 +188,6 @@ form h3, form a{
 	margin:25px 0 0 25px;;
 	clear:both;
 }
-/* #div_login_2,#div_login_1{*/
-/* 	display:none;*/
-/* }*/
 .arrow_2{
 	fill:$white;
 	cursor:pointer;
@@ -207,7 +206,7 @@ form h3, form a{
 	letter-spacing:1px;
 }
 #login-reg span:hover{
-	text-shadow:0 0 1px 2px #000;
+	text-shadow:0 0 1px #000;
 }
 #arrowSpan_1{
 	top:0;
@@ -452,6 +451,9 @@ h3,h2{
 // 	left:0;
 // 	margin:auto;
 // }
+.blue{
+	background:$blue;
+}
 
 /*---------------------------------------------------------------------*/
 /*media queries*/
@@ -496,7 +498,7 @@ h3,h2{
 	padding-top:30px;
 
 	}
-	#menu-list{
+	#menu_list{
 		width:100%;
 	}
 
@@ -542,9 +544,6 @@ h3,h2{
 	}
 	.mapp{
 		height:300px;
-	}
-	.backTop{
-		margin:20px;
 	}
 	.main{
 		display:-ms-grid;
@@ -682,7 +681,7 @@ h3,h2{
 		max-width:30%;
 		margin-left:5%;
 	}
-	#menu-list{
+	#menu_list{
 		width:100%;
 	}
 
@@ -904,7 +903,7 @@ h3,h2{
 	}
 
 	#logo{
-		max-width:30%;
+		max-width:20%;
 		margin-left:8.5%;
 	}
 	.container{
@@ -913,15 +912,15 @@ h3,h2{
 		width:440px;
 
 	}
-	#menu-list{
+	#menu_list{
 		
 		display:flex;
 		flex-direction: row;
-		width:65%;
+		width:80%;
 		margin-left:8.5%;
 		
 	}
-	#menu-list li{
+	#menu_list li{
 		border-bottom:none;
 		padding-top:3px;
 	
@@ -932,7 +931,7 @@ h3,h2{
 	.show-md{
 		display:block;
 	}
-	#menu-list a{
+	#menu_list a{
 		color:$white;
 		text-shadow: $shadow;
 		font-size:120%;
@@ -955,7 +954,7 @@ h3,h2{
 	  width: 50px;
 	  height: 800px;
 
-}
+	}
 	.main{
 		display:-ms-grid;
 		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
@@ -1049,7 +1048,7 @@ h3,h2{
 	}
 	
 	#logo{
-		max-width:28%;
+		max-width:20%;
 		margin-left:17%;
 	}
 	.container{
@@ -1057,7 +1056,7 @@ h3,h2{
 		margin-right:100px;
 		width:440px;
 	}
-	#menu-list li{
+	#menu_list li{
 		border-bottom:none;
 		padding-top:3px;
 		
@@ -1065,11 +1064,11 @@ h3,h2{
 	.hidden-lg{
 		display:none
 	}
-	#menu-list{
+	#menu_list{
 		
 		display:flex;
 		flex-direction: row;
-		width:50%;
+		width:60%;
 		margin-left:17%;
 
 	}
@@ -1078,7 +1077,7 @@ h3,h2{
 		height:40px;
 		width:100%;
 	}
-	#menu-list li{
+	#menu_list li{
 		border-bottom:none;
 		padding-top:5px;
 		
@@ -1089,7 +1088,7 @@ h3,h2{
 	.show-lg{
 		display:block;
 	}
-	#menu-list a{
+	#menu_list a{
 		color:$white;
 		text-shadow: $shadow;
 		font-size:120%;
@@ -1115,8 +1114,7 @@ h3,h2{
 	  left: 0;
 	  width: 50px;
 	  height: 800px;
-
-}
+	}
 	.main{
 		display:-ms-grid;
 		-ms-grid-template-columns:repeat(6,1fr) repeat(6,1fr);
@@ -1220,7 +1218,7 @@ h3,h2{
 		margin-right:100px;
 		width:440px;
 	}
-	#menu-list li{
+	#menu_list li{
 		border-bottom:none;
 		padding-top:3px;
 		
@@ -1231,12 +1229,12 @@ h3,h2{
 	.show-xl{
 		display:block;
 	}
-	#menu-list{
+	#menu_list{
 		
 		display:flex;
 		flex-direction: row;
 		margin-left:17%;
-		width:40%;
+		width:50%;
 			
 	}
 	nav{
@@ -1244,7 +1242,7 @@ h3,h2{
 		height:40px;
 		width:100%;
 	}
-	#menu-list li{
+	#menu_list li{
 		border-bottom:none;
 		padding-top:5px;
 		
@@ -1253,7 +1251,7 @@ h3,h2{
 	.hidden-md{
 		display:none
 	}
-	#menu-list a{
+	#menu_list a{
 		color:$white;
 		text-shadow: $shadow;
 		font-size:120%;

@@ -1,9 +1,10 @@
 
 $(document).ready(function(){
  	
-
+		$('li.homeBtn').addClass('blue');
 		$('main').remove();
-		showLoader('#nav');
+
+		showLoader('nav');
 		$.ajax({
     		url: "snippets/home.html",
     		method:'GET',
@@ -16,10 +17,11 @@ $(document).ready(function(){
 });
 
 $(function(){
+
+	
 	
 	// toggle button for mobile menu
-
-
+	
 	$('#logo').on('click', function(){
 
 		$('main').remove();
@@ -64,55 +66,23 @@ $(function(){
     
   });
 
-	$('.aboutBtn').on('click',function(){
+	$('#menu_list>li>a').on('click',function(){
+
 		$('main').remove();
+		var path = $(this).parent().attr("id");
+		
 		showLoader('nav');
 		$.ajax({
-    		url: "snippets/about.html",
+    		url: "snippets/"+path+".html",
     		method:'GET',
     		success: changeText
     		
     	});
-    	// $('.footer').show();
     	
     	checkHeight();
 
 	});
-	$('.servicesBtn').on('click',function(){
-		$('main').remove();
-		showLoader('nav');
-		$.ajax({
-    		url: "snippets/services.html",
-    		method:'GET',
-    		success: changeText
-    		
-    	});
-
-
-	});
-	$('.contactBtn').on('click',function(){
-		$('main').remove();
-		showLoader('nav');
-		$.ajax({
-    		url: "snippets/contactUs.html",
-    		method:'GET',
-    		success: changeText
-    		
-    	});
-
-
-	});
-	$('.homeBtn').on('click',function(){
-		$('main').remove();
-		showLoader('nav');
-		$.ajax({
-    		url: "snippets/home.html",
-    		method:'GET',
-    		success: changeText
-    		
-    	});
-    	
-	});
+	// 
 	$('body').on('click','#sign_up', function(){
 		$('main').remove();
 		showLoader('nav');
@@ -244,5 +214,3 @@ function checkHeight(){
 		$('.footer').removeClass('footer');
 	}
 }
-	
-
