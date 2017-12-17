@@ -57,10 +57,10 @@ $(function(){
 	});	
 	
 
-	$("#menu_list").click(function (event) {
+	$("#menu-list").click(function () {
 		var $screenWidth = $(window).width();
     if ($screenWidth < 768){
-    	$('#menu_list').slideUp('600');
+    	$('#menu-list').slideUp('600');
 
     }
     
@@ -81,7 +81,7 @@ $(function(){
     	checkHeight();
 
 	});
-	// 
+	
 	$('body').on('click','#sign_up', function(){
 		$('main').remove();
 		showLoader('nav');
