@@ -36,12 +36,12 @@ $(function(){
 	});
 	$('#nav').on('click',function(){
 		
-			$('#menu_list').slideToggle('600');
+			$('#menu_list').slideToggle('fast');
 	});
 	
 	$('body').on('click','#plius_1',function(){
 		
-		$('#div_login_1').slideToggle('600',function(){
+		$('#div_login_1').slideToggle('fast',function(){
 			$('#minus_1').slideToggle();
 			
 		});
@@ -49,7 +49,7 @@ $(function(){
 
 	$('body').on('click','#plius_2',function(){
 		
-		$('#div_login_2').slideToggle('600',function(){
+		$('#div_login_2').slideToggle('fast',function(){
 			
 			
 			$('#minus_2').slideToggle();
@@ -60,7 +60,7 @@ $(function(){
 	$("#menu_list").click(function (event) {
 		var $screenWidth = $(window).width();
     if ($screenWidth < 768){
-    	$('#menu_list').slideUp('600');
+    	$('#menu_list').slideUp('fast');
 
     }
     
@@ -81,7 +81,7 @@ $(function(){
     	checkHeight();
 
 	});
-	
+
 	$('body').on('click','#sign_up', function(){
 		$('main').remove();
 		showLoader('nav');
