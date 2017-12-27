@@ -1,9 +1,14 @@
 
-$(document).ready(function(){
+$(function(){
  	
-		$('li.homeBtn').addClass('blue');
+	loaderPage();	
+    	
+	
+});
+function loaderPage(){
+	
+	$('li.homeBtn').addClass('blue');
 		$('main').remove();
-
 		showLoader('nav');
 		$.ajax({
     		url: "snippets/home.html",
@@ -12,9 +17,7 @@ $(document).ready(function(){
     		
     		
     	});
-    	
-	
-});
+}
 
 $(function(){
 
@@ -66,7 +69,8 @@ $(function(){
     
   });
 
-	$('#menu_list>li>a').on('click',function(){
+	$('#menu_list>li>a').on('click',function(e){
+		$('#menu_list>li').removeClass('blue');
 		$('main').remove();
 		var path = $(this).parent().attr("id");
 		showLoader('nav');
@@ -76,8 +80,7 @@ $(function(){
     		success: changeText
     		
     	});
-    	// $('.footer').show();
-    	
+    	$(this).parent().addClass('blue');
     	checkHeight();
 
 	});
