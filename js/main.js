@@ -15,13 +15,11 @@ $(function(){
 $(function(){
 
 	// toggle button for mobile menu
-	
-	
 	$('#nav').on('click',function(){
 		
 			$('#menu_list').slideToggle('fast');
 	});
-	
+	// mobile view plius-minus button
 	$('body').on('click','#plius_1',function(){
 		
 		$('#div_login_1').slideToggle('fast',function(){
@@ -199,7 +197,8 @@ function insertLoader(selector, loader){
 	var targetEl = $(selector);
 	targetEl.after(loader);
 }
-
+// loader finish
+//checks height to fix footer
 function checkHeight(){
 	var $height = $(window).height();
 	if($height > 800){
@@ -210,9 +209,5 @@ function checkHeight(){
 		$('.footer').removeClass('footer');
 	}
 }
-function loadHref(){
-	let url = $(window).location.href;
-	console.log(url);
-}
-	
+//-----------------------------------------------------------
 
