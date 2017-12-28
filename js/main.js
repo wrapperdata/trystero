@@ -1,6 +1,6 @@
 
 $(function(){
- 	
+ 	//loading home page
 	$('main').remove();
 		showLoader('nav');
 		$.ajax({
@@ -8,32 +8,15 @@ $(function(){
     		method:'GET',
     		success: changeText
     		
-    		
     	});	
-    	
-	
 });
 
 
 $(function(){
 
-	
-	
 	// toggle button for mobile menu
 	
-	$('#logo').on('click', function(){
-		$('#menu_list>li').removeClass('blue');
-		$('main').remove();
-		showLoader('nav');
-		$.ajax({
-    		url: "snippets/home.html",
-    		method:'GET',
-    		success: changeText
-    		
-    	});
-    	$('li.homeBtn').addClass('blue');
-    	
-	});
+	
 	$('#nav').on('click',function(){
 		
 			$('#menu_list').slideToggle('fast');
@@ -55,8 +38,21 @@ $(function(){
 			$('#minus_2').slideToggle();
 		});	
 	});	
-	
-
+	// logo button
+	$('#logo').on('click', function(){
+		$('#menu_list>li').removeClass('blue');
+		$('main').remove();
+		showLoader('nav');
+		$.ajax({
+    		url: "snippets/home.html",
+    		method:'GET',
+    		success: changeText
+    		
+    	});
+    	$('li.homeBtn').addClass('blue');
+    	
+	});
+	// check windows width
 	$("#menu_list").click(function (event) {
 		var $screenWidth = $(window).width();
     if ($screenWidth < 768){
@@ -65,7 +61,7 @@ $(function(){
     }
     
   });
-
+	// menu buttons
 	$('#menu_list>li>a').on('click',function(e){
 		$('#menu_list>li').removeClass('blue');
 		$('main').remove();
@@ -81,7 +77,7 @@ $(function(){
     	checkHeight();
 
 	});
-
+// sign up button
 	$('body').on('click','#sign_up', function(){
 		$('#menu_list>li').removeClass('blue');
 		$('main').remove();
@@ -96,7 +92,7 @@ $(function(){
   
 });
 
-
+// ajax function to update page
 function changeText(data, status){
 	
 	$('.backTop').before(data);
@@ -107,7 +103,7 @@ function changeText(data, status){
 
 }
 
-
+//slideshow starts
 var img_41 = "url('images/467.jpg')",
 	img_42 = "url('images/courier2-467.jpg')",
 	img_43 = "url('images/deliver-467.jpg')",
@@ -173,7 +169,7 @@ function toSlide(){
 	}, 10000);
 	
 }
-
+	//slideshow finish
 	//-----------------------------------------
 	// loader
 function showLoader(selector){
