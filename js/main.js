@@ -1,14 +1,7 @@
 
 $(function(){
  	
-	loaderPage();	
-    	
-	
-});
-function loaderPage(){
-	
-	$('li.homeBtn').addClass('blue');
-		$('main').remove();
+	$('main').remove();
 		showLoader('nav');
 		$.ajax({
     		url: "snippets/home.html",
@@ -16,8 +9,11 @@ function loaderPage(){
     		success: changeText
     		
     		
-    	});
-    	}
+    	});	
+    	
+	
+});
+
 
 $(function(){
 
@@ -26,8 +22,7 @@ $(function(){
 	// toggle button for mobile menu
 	
 	$('#logo').on('click', function(){
-		// let url = $(location);
-		// console.log(url);
+		$('#menu_list>li').removeClass('blue');
 		$('main').remove();
 		showLoader('nav');
 		$.ajax({
@@ -36,6 +31,7 @@ $(function(){
     		success: changeText
     		
     	});
+    	$('li.homeBtn').addClass('blue');
     	
 	});
 	$('#nav').on('click',function(){
