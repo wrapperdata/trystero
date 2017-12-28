@@ -17,7 +17,7 @@ function loaderPage(){
     		
     		
     	});
-}
+    	}
 
 $(function(){
 
@@ -26,7 +26,8 @@ $(function(){
 	// toggle button for mobile menu
 	
 	$('#logo').on('click', function(){
-
+		// let url = $(location);
+		// console.log(url);
 		$('main').remove();
 		showLoader('nav');
 		$.ajax({
@@ -86,6 +87,7 @@ $(function(){
 	});
 
 	$('body').on('click','#sign_up', function(){
+		$('#menu_list>li').removeClass('blue');
 		$('main').remove();
 		showLoader('nav');
 		$.ajax({
@@ -215,6 +217,10 @@ function checkHeight(){
 	else{
 		$('.footer').removeClass('footer');
 	}
+}
+function loadHref(){
+	let url = $(window).location.href;
+	console.log(url);
 }
 	
 
