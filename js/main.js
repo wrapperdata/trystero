@@ -9,9 +9,9 @@ $(function(){
     		success: changeText
     		
     	});	
-    	$(document).on("click", function () {
-   			 $('#menu_list').hide();
-		});
+//     	$(document).on("click", function () {
+//    			 $('#menu_list').hide();
+// 		});
     	
 });
 
@@ -66,10 +66,10 @@ $(function(){
 
     
   });
-	$('#nav').click(function(event){
-        event.stopPropagation();
+// 	$('#nav').click(function(event){
+//         event.stopPropagation();
          
-    });
+//     });
     
 
 
